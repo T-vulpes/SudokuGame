@@ -5,13 +5,13 @@ import random
 class SudokuApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Sudoku Solver and Generator")
+        self.root.title("Sudokuu")
 
         self.board = [[0 for _ in range(9)] for _ in range(9)]
         self.entries = [[None for _ in range(9)] for _ in range(9)]
 
         self.create_widgets()
-        self.generate_sudoku(40)  # Generate a sudoku puzzle with 40 holes
+        self.generate_sudoku(40)  
 
     def create_widgets(self):
         frame = tk.Frame(self.root)
